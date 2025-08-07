@@ -78,7 +78,7 @@ You can set the path in your BaseTest or system environment variables:
 ###  Run Individual Test Class from Terminal
 
 ```bash
-./gradlew test --tests "com.tests.scenarios.Set3_Tshirt_Headphones_CheckoutScenarioTest"
+./gradlew test --tests "com.tests.Set1_DefaultPageTestScenarioTest"
 ```
 
 Or in IntelliJ: Right-click on the test class → `Run`
