@@ -1,0 +1,36 @@
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Java build
+/out/
+build/
+*.class
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+# Logs and crash reports
+*.log
+hs_err_pid*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Selenium / WebDriver logs
+chromedriver.log
+geckodriver.log
+selenium-debug.log
+
+# Test reports (optional to ignore)
+test-output/
+reports/
+
+# Env files
+*.env
+*.local

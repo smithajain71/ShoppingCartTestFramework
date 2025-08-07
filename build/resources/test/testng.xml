@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CartSuite" parallel="tests" thread-count="2">
+    <test name="FirefoxTests1">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.tests.Set1_DefaultPageTestScenarioTest"/>
+            <class name="com.tests.Set2_DefaultCart_RemoveMugAndCancelScenarioTest"/>
+            <class name="com.tests.Set3_Tshirt_Headphones_CheckoutScenarioTest"/>
+            <class name="com.tests.Set4_ItemRemovalVariationsScenarioTest"/>
+            <class name="com.tests.Set5_TooltipValidationScenarioTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTests2">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.tests.Set6_EmptyCartTotal_CheckoutButton"/>
+            <class name="com.tests.Set7_DiscountExpiryLogic"/>
+            <class name="com.tests.Set8_QuantityValidation"/>
+            <class name="com.tests.Set9_SubtotalMiscalculation"/>
+            <class name="com.tests.Set10_TShirtOutOfStock"/>
+        </classes>
+    </test>
+</suite>

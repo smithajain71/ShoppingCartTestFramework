@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tests'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.9.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+}
+
+test {
+    useTestNG()
+    outputs.upToDateWhen { false }
+    testLogging {
+        events "passed", "failed", "skipped"
+    }
+    doFirst {
+        file("test-output").mkdirs()
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+
+}
