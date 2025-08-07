@@ -1,5 +1,6 @@
 package com.tests;
 import com.base.BaseTest;
+import com.constants.Constants;
 import com.pages.CartPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +12,7 @@ public class Set3_Tshirt_Headphones_CheckoutScenarioTest extends BaseTest{
 
     @BeforeMethod
     public void setUpPage() {
-        driver.get("https://gb-saa-test.vercel.app/#");
+        driver.get(Constants.URL);
         cartPage = new CartPage(driver);
     }
 

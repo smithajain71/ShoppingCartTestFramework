@@ -1,6 +1,7 @@
 package com.tests;
 
 import com.base.BaseTest;
+import com.constants.Constants;
 import com.pages.CartPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -8,13 +9,13 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Set7_DiscountExpiryLogic extends BaseTest {
+public class Set7_DiscountExpiryLogicTest extends BaseTest {
 
     CartPage cartPage;
 
     @BeforeMethod
     public void setUpPage() {
-        driver.get("https://gb-saa-test.vercel.app/#");
+        driver.get(Constants.URL);
         cartPage = new CartPage(driver);
     }
 

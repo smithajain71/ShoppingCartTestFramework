@@ -30,11 +30,11 @@ ShoppingCartTestFramework/
 │       │           ├── Set3_Tshirt_Headphones_CheckoutScenarioTest.java
 │       │           ├── Set4_ItemRemovalVariationsScenarioTest.java
 │       │           ├── Set5_TooltipValidationScenarioTest.java
-│       │           ├── Set6_EmptyCartTotal_CheckoutButton.java
-│       │           ├── Set7_DiscountExpiryLogic.java
-│       │           ├── Set8_QuantityValidation.java
-│       │           ├── Set9_SubtotalMiscalculation.java
-│       │           └── Set10_TShirtOutOfStock.java
+│       │           ├── Set6_EmptyCartTotal_CheckoutButtonTest.java
+│       │           ├── Set7_DiscountExpiryLogicTest.java
+│       │           ├── Set8_QuantityValidationTest.java
+│       │           ├── Set9_SubtotalMiscalculationTest.java
+│       │           └── Set10_TShirtOutOfStockTest.java
 │       └── resources/
 │           └── testng.xml
 ```
@@ -78,7 +78,7 @@ You can set the path in your BaseTest or system environment variables:
 ###  Run Individual Test Class from Terminal
 
 ```bash
-./gradlew test --tests "com.tests.scenarios.Set3_Tshirt_Headphones_CheckoutScenarioTest"
+./gradlew test --tests "com.tests.Set1_DefaultPageTestScenarioTest"
 ```
 
 Or in IntelliJ: Right-click on the test class → `Run`

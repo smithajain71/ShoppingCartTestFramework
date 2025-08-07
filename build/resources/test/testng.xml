@@ -14,11 +14,11 @@
     <test name="FirefoxTests2">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.tests.Set6_EmptyCartTotal_CheckoutButton"/>
-            <class name="com.tests.Set7_DiscountExpiryLogic"/>
-            <class name="com.tests.Set8_QuantityValidation"/>
-            <class name="com.tests.Set9_SubtotalMiscalculation"/>
-            <class name="com.tests.Set10_TShirtOutOfStock"/>
+            <class name="com.tests.Set6_EmptyCartTotal_CheckoutButtonTest"/>
+            <class name="com.tests.Set7_DiscountExpiryLogicTest"/>
+            <class name="com.tests.Set8_QuantityValidationTest"/>
+            <class name="com.tests.Set9_SubtotalMiscalculationTest"/>
+            <class name="com.tests.Set10_TShirtOutOfStockTest"/>
         </classes>
     </test>
 </suite>

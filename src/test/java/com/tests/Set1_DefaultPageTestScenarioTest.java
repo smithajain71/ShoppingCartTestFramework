@@ -1,6 +1,7 @@
 package com.tests;
 
 import com.base.BaseTest;
+import com.constants.Constants;
 import com.pages.CartPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ public class Set1_DefaultPageTestScenarioTest extends BaseTest {
     */
     @Test
     public void verifyCartPageDefaultElements() {
-        driver.get("https://gb-saa-test.vercel.app/#");
+        driver.get(Constants.URL);
         CartPage cartPage = new CartPage(driver);
 
         // Header & Navigation
